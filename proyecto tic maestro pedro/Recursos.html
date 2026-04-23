@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos TIC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1b2740;
+    }
+
+    .top-line {
+      height: 8px;
+      background: #1f1fb8;
+    }
+
+  .resources-page {
+  padding: 210px 70px 60px;
+
+
+    }
+
+    .resources-page h1 {
+      font-size: 56px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .resources-page .intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #62708a;
+      margin-bottom: 30px;
+      max-width: 1050px;
+    }
+
+    .resources-page h2 {
+      font-size: 52px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 18px;
+    }
+
+    .advantages-list {
+      color: #62708a;
+      font-size: 17px;
+      line-height: 1.8;
+      padding-left: 22px;
+      margin-bottom: 28px;
+      max-width: 1080px;
+    }
+
+    .advantages-list strong {
+      color: #41536f;
+    }
+
+    .media-image {
+      margin-top: 16px;
+    }
+
+    .media-image img {
+      width: 100%;
+      max-width: 1000px;
+      display: block;
+      border-radius: 4px;
+    }
+
+      @media (max-width: 900px) {
+      .navbar {
+        padding: 20px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-img {
+        width: 250px;
+      }
+
+      .menu {
+        gap: 15px;
+      }
+
+      .resources-page {
+        padding: 180px 25px 50px;
+      }
+
+      .resources-page h1 {
+        font-size: 42px;
+      }
+
+      .resources-page h2 {
+        font-size: 40px;
+      }
+
+      .resources-page .intro,
+      .advantages-list {
+        font-size: 16px;
+      }
+    }
+
+
+      .resources-page .intro,
+      .advantages-list {
+        font-size: 16px;
+      }
+    
+        .tac-section {
+      margin-top: 34px;
+      max-width: 1080px;
+    }
+
+    .tac-section p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #62708a;
+      margin-bottom: 22px;
+    }
+
+    .tac-section h2 {
+      font-size: 54px;
+      font-weight: 600;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      color: #1b2740;
+    }
+
+    .tac-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111111;
+      margin-top: 10px;
+      margin-bottom: 18px;
+    }
+
+    .tac-list {
+      color: #62708a;
+      font-size: 17px;
+      line-height: 1.8;
+      padding-left: 22px;
+      margin-bottom: 10px;
+    }    .tep-section {
+      margin-top: 28px;
+      max-width: 1080px;
+    }
+
+    .tep-section p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #62708a;
+      margin-bottom: 22px;
+    }
+
+    .tep-section h2 {
+      font-size: 54px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 18px;
+      color: #1b2740;
+    }
+
+    .tep-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111111;
+      margin-top: 10px;
+      margin-bottom: 18px;
+    }
+
+    .tep-list {
+      color: #62708a;
+      font-size: 17px;
+      line-height: 1.8;
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    .video-section {
+      margin-top: 40px;
+    }
+
+    .video-section h2 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px 60px;
+      background: rgba(111, 0, 255, 0.92);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+  width: 220px;
+  height: auto;
+  display: block;
+}
+
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffe066;
+    }
+
+  </style>
+</head>
+
+ <body>
+  <nav class="navbar">
+    <div class="logo">
+     <img src="UNM-Logo_grises-1024x456.png" alt="Logo UNM" class="logo-img">
+
+    </div>
+
+    <ul class="menu">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="Recursos.html">Recursos</a></li>
+   <li><a href="TICS.html">TIC</a></li>
+  <li><a href="TAC.html">TAC</a></li>
+  <li><a href="TEP.html">TEP</a></li>
+  <li><a href="TEP.html">¿Quiénes somos?</a></li>
+
+
+      
+    </ul>
+  </nav>
+
+  <div class="top-line"></div>
+
+  <main class="resources-page">
+
+    <h1>Que son las Tic?</h1>
+
+    <p class="intro">
+      Las Tecnologías de la Información y la Comunicación (TIC) abarcan un conjunto de herramientas digitales
+      que permiten gestionar, procesar y transmitir información como: voz, datos, texto, video e imágenes
+    </p>
+
+    <h2>Ventajas</h2>
+
+    <ul class="advantages-list">
+      <li><strong>Acceso rápido a la información:</strong> Permiten encontrar información de manera inmediata desde cualquier lugar.</li>
+      <li><strong>Mejora del aprendizaje:</strong> Facilitan una educación más interactiva y dinámica.</li>
+      <li><strong>Comunicación eficiente:</strong> Permiten comunicación rápida entre estudiantes y docentes (correo, videollamadas).</li>
+      <li><strong>Flexibilidad educativa:</strong> Posibilitan estudiar en línea desde cualquier lugar y horario.</li>
+      <li><strong>Desarrollo de habilidades digitales:</strong> Preparan a los estudiantes para el mundo tecnológico actual.</li>
+      <li><strong>Trabajo colaborativo:</strong> Facilitan el trabajo en equipo mediante herramientas digitales.</li>
+    </ul>
+
+    <h2>Herramientas y Medios</h2>
+
+    <div class="media-image">
+<img src="imagentipotic.png" alt="Herramientas y medios TIC">
+
+    </div>
+        <section class="tac-section">
+      <p>
+        Las TIC (Tecnologías de la Información y la Comunicación) son la base; las TAC
+        (Tecnologías del Aprendizaje y Conocimiento) las usan para mejorar el proceso
+        didáctico; y las TEP (Tecnologías para el Empoderamiento y la Participación).
+      </p>
+
+      <h2>TAC</h2>
+
+      <p>
+        Las Tecnologías del Aprendizaje y el Conocimiento (TAC) son herramientas digitales
+        utilizadas con un enfoque educativo, que permiten mejorar el proceso de enseñanza-aprendizaje,
+        promoviendo la comprensión, la creatividad y el desarrollo de habilidades en los estudiantes.
+      </p>
+
+      <p>
+        Las TAC incluyen aplicaciones y programas educativos que permiten aprender de forma interactiva,
+        crear contenido digital y mejorar la enseñanza mediante el uso de la tecnología.
+      </p>
+
+      <p class="tac-title">TAC (Tecnologías del Aprendizaje y el Conocimiento)</p>
+
+      <ul class="tac-list">
+        <li>Kahoot</li>
+        <li>Quizizz</li>
+        <li>Canva</li>
+        <li>Genially</li>
+      </ul>
+    </section>
+    <section class="tep-section">
+      <h2>TEP</h2>
+
+      <p>
+        Las TEP son herramientas digitales que fomentan la participación, la colaboración y el
+        empoderamiento de las personas, permitiéndoles crear, compartir ideas y generar impacto en la sociedad.
+      </p>
+
+      <p>
+        “Las TEP convierten a los usuarios en protagonistas activos, capaces de participar, crear y transformar su entorno.
+      </p>
+
+      <p class="tep-title">TEP (Tecnologías para el Empoderamiento y la Participación)</p>
+
+      <ul class="tep-list">
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>TikTok</li>
+        <li>Padlet</li>
+        <li>Blogger</li>
+      </ul>
+    </section>
+        <section class="video-section">
+            
+      <h2>Video Educativo</h2>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/NmQD0b_-ws4"
+          title="Video educativo sobre TIC"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+
+  </main>
+</body>
+</html>

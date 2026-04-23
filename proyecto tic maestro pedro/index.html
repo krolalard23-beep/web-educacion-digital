@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TICs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #3b00c9 0%, #8f00ff 50%, #d100ff 100%);
+      color: white;
+    }
+
+     .hero {
+  min-height: 680px;
+  padding: 140px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+    
+
+
+     .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 60px;
+  background: rgba(111, 0, 255, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+.logo-img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+    .logo-box {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #62ff6f;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #62ff6f;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .logo-text {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #d8c7ff;
+      max-width: 240px;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffe066;
+    }
+
+    .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 72px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .hero-text p {
+      font-size: 30px;
+      font-weight: 300;
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+   .hero-image img {
+  max-width: 100%;
+  width: 700px;
+  height: auto;
+  display: block;
+}
+
+
+       @media (max-width: 900px) {
+      .hero {
+  min-height: auto;
+  padding: 150px 25px 40px;
+}
+
+
+      .navbar {
+        padding: 20px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu {
+        gap: 15px;
+      }
+
+      .hero-text h1 {
+        font-size: 48px;
+      }
+
+      .hero-text p {
+        font-size: 22px;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+    
+        .features {
+      background: #ffffff;
+      color: #1b2740;
+      padding: 70px 60px 30px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 35px;
+    }
+
+    .feature-card {
+      text-align: left;
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .feature-card p {
+      color: #62708a;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .key-section {
+      background: #ffffff;
+      color: #1b2740;
+      padding: 60px 60px 80px;
+    }
+
+    .key-section h2 {
+      font-size: 58px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .key-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .key-card {
+      text-align: center;
+    }
+
+    .key-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .key-card h3 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .key-card p {
+      color: #62708a;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .features,
+      .key-section {
+        padding: 45px 25px;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .key-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .key-section h2 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .knowledge-section {
+      background: #ffffff;
+      color: #1b2740;
+      padding: 30px 60px 90px;
+    }
+
+    .knowledge-container {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .knowledge-text h2 {
+      font-size: 64px;
+      line-height: 1.1;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .knowledge-text p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #62708a;
+      margin-bottom: 28px;
+      max-width: 560px;
+    }
+
+    .knowledge-image img {
+      width: 100%;
+      max-width: 920px;
+      display: block;
+      object-fit: cover;
+    }
+
+    @media (max-width: 900px) {
+      .knowledge-section {
+        padding: 20px 25px 60px;
+      }
+
+      .knowledge-container {
+        grid-template-columns: 1fr;
+      }
+
+      .knowledge-text h2 {
+        font-size: 44px;
+      }
+
+      .knowledge-image img {
+        max-width: 100%;
+      }
+    }
+    .goals-section {
+      background: #ffffff;
+      color: #1b2740;
+      padding: 20px 60px 100px;
+    }
+
+    .goals-section h2 {
+      font-size: 56px;
+      font-weight: 500;
+      margin-bottom: 55px;
+    }
+
+    .goals-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 60px;
+    }
+
+    .goal-card {
+      text-align: left;
+    }
+
+    .goal-icon {
+      font-size: 58px;
+      color: #c24a58;
+      margin-bottom: 18px;
+    }
+
+    .goal-card h3 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .goal-card p {
+      color: #62708a;
+      font-size: 17px;
+      line-height: 1.6;
+      font-style: italic;
+      max-width: 330px;
+    }
+
+    @media (max-width: 900px) {
+      .goals-section {
+        padding: 20px 25px 70px;
+      }
+
+      .goals-section h2 {
+        font-size: 42px;
+      }
+
+      .goals-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+    }
+
+  </style>
+</head>
+ <body>
+  <nav class="navbar">
+    <div class="logo">
+     <img src="UNM-Logo_grises-1024x456.png" alt="Logo UNM" class="logo-img">
+
+    </div>
+
+    <ul class="menu">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="Recursos.html">Recursos</a></li>
+   <li><a href="TICS.html">TIC</a></li>
+  <li><a href="TAC.html">TAC</a></li>
+  <li><a href="TEP.html">TEP</a></li>
+  <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+</ul>
+
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>TIC</h1>
+        <p>las Tecnologías de la Información y la Comunicación (TIC).</p>
+      </div>
+
+      <div class="hero-image">
+        <img src="imagencentro.jpg" alt="Ilustración TIC">
+      </div>
+    </div>
+  </section>
+    <section class="features">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <h3>Educacion</h3>
+        <p>Innovación, aprendizaje, conectividad.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🧩</div>
+        <h3>Gamificacion</h3>
+        <p>Motivación, participación, recompensa..</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🖐️</div>
+        <h3>Creatividad</h3>
+        <p>Innovación, imaginación, expresión</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎓</div>
+        <h3>Habilidades</h3>
+        <p>Destrezas, competencias, capacidades.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="key-section">
+    <h2>Clave</h2>
+
+    <div class="key-grid">
+      <article class="key-card">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Estudiante">
+        <h3>Estudiante</h3>
+        <p>Facilitan el acceso a la información, mejoran el aprendizaje y fortalecen la participación en entornos digitales.</p>
+      </article>
+
+      <article class="key-card">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="Docente">
+        <h3>Docente</h3>
+        <p>Agilizan la planificación y desarrollo de clases, permitiendo metodologías más dinámicas e interactivas.</p>
+      </article>
+
+      <article class="key-card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Profesional">
+        <h3>Profesional</h3>
+        <p>Optimizan la comunicación, la productividad y la gestión de procesos en distintos campos laborales.</p>
+      </article>
+    </div>
+  </section>
+    <section class="knowledge-section">
+    <div class="knowledge-container">
+      <div class="knowledge-text">
+        <h2>Construye tu<br>Conocimiento!</h2>
+
+        <p>
+          Las Tecnologías de la Información y las Comunicaciones (TIC), son el conjunto de recursos,
+          herramientas, equipos, programas informáticos, aplicaciones, redes y medios que permiten la
+          compilación, procesamiento, almacenamiento, transmisión de información como: voz, datos, texto,
+          video e imágenes.
+        </p>
+
+        <p>
+          Las Tecnologías de la Información y la Comunicación son un instrumento que forma parte habitual
+          de una enorme gama de oportunidades laborales y de desarrollo, por lo que su sólo manejo eficaz,
+          puede significar oportunidades de acceso y crecimiento personal y profesional.
+        </p>
+      </div>
+
+      <div class="knowledge-image">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" alt="Estudiantes aprendiendo con tecnología">
+      </div>
+    </div>
+  </section>
+  <section class="goals-section">
+    <h2>Metas</h2>
+
+    <div class="goals-grid">
+      <article class="goal-card">
+        <div class="goal-icon">💗</div>
+        <h3>Apasionate</h3>
+        <p>«Es el momento de aprender y de sembrar sueños». Ruben Dario</p>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-icon">📖</div>
+        <h3>Profesionalizate</h3>
+        <p>La educación digital es clave para transformar y mejorar el aprendizaje del futuro.</p>
+      </article>
+
+      <article class="goal-card">
+        <div class="goal-icon">☝️</div>
+        <h3>Superate</h3>
+        <p>“La vida es un desafío que hay que vivir con pasión y valentía.”. Gioconda Belli</p>
+      </article>
+    </div>
+  </section>
+
+
+</body>
+</html>

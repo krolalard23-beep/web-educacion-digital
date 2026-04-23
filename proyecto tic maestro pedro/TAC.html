@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1b2740;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px 60px;
+      background: rgba(111, 0, 255, 0.92);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 220px;
+      height: auto;
+      display: block;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffe066;
+    }
+
+    .tac-page {
+      padding: 180px 60px 70px;
+    }
+
+    .tac-page h1 {
+      font-size: 54px;
+      margin-bottom: 14px;
+    }
+
+    .tac-page .intro {
+      font-size: 18px;
+      color: #62708a;
+      line-height: 1.7;
+      margin-bottom: 35px;
+      max-width: 950px;
+    }
+
+    .tac-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+      gap: 18px;
+      justify-content: start;
+    }
+
+    .tac-card {
+      display: block;
+      text-decoration: none;
+      background: #f3f3f3;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #1b2740;
+    }
+
+    .tac-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .tac-card img {
+      width: 100%;
+      height: 95px;
+      object-fit: contain;
+      display: block;
+      background: #ffffff;
+      padding: 8px;
+    }
+
+    .tac-card-content {
+      padding: 10px 12px 14px;
+    }
+
+    .tac-card h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .tac-card p {
+      font-size: 11px;
+      line-height: 1.45;
+      color: #62708a;
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        padding: 20px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-img {
+        width: 200px;
+      }
+
+      .menu {
+        gap: 15px;
+      }
+
+      .tac-page {
+        padding: 220px 25px 50px;
+      }
+
+      .tac-page h1 {
+        font-size: 42px;
+      }
+
+      .tac-page .intro {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="UNM-Logo_grises-1024x456.png" alt="Logo UNM" class="logo-img">
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Recursos.html">Recursos</a></li>
+      <li><a href="TICS.html">TIC</a></li>
+      <li><a href="TAC.html">TAC</a></li>
+      <li><a href="TEP.html">TEP</a></li>
+      <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+    </ul>
+  </nav>
+
+  <main class="tac-page">
+    <h1>Herramientas TAC</h1>
+    <p class="intro">
+      Las TAC integran la tecnologia en el aprendizaje. Selecciona una herramienta
+      para acceder a su plataforma.
+    </p>
+
+    <section class="tac-grid">
+      <a href="https://www.khanacademy.org/login" class="tac-card" target="_blank">
+        <img src="khan.png" alt="Khan Academy">
+        <div class="tac-card-content">
+          <h3>Khan Academy</h3>
+          <p>Plataforma educativa con lecciones, ejercicios y recursos para aprender a tu ritmo.</p>
+        </div>
+      </a>
+
+      <a href="https://www.duolingo.com/log-in" class="tac-card" target="_blank">
+        <img src="duolingo.jpg" alt="Duolingo">
+        <div class="tac-card-content">
+          <h3>Duolingo</h3>
+          <p>Aplicacion educativa para aprender idiomas mediante actividades cortas e interactivas.</p>
+        </div>
+      </a>
+
+      <a href="https://www.geogebra.org/" class="tac-card" target="_blank">
+        <img src="geogebra.jpg" alt="GeoGebra">
+        <div class="tac-card-content">
+          <h3>GeoGebra</h3>
+          <p>Herramienta para matematicas que permite explorar algebra, geometria y calculo.</p>
+        </div>
+      </a>
+
+      <a href="https://phet.colorado.edu/" class="tac-card" target="_blank">
+        <img src="phet.png" alt="PhET Interactive Simulations">
+        <div class="tac-card-content">
+          <h3>PhET</h3>
+          <p>Simulaciones interactivas para aprender ciencias y matematicas de forma visual.</p>
+        </div>
+      </a>
+
+      <a href="https://edpuzzle.com/" class="tac-card" target="_blank">
+        <img src="edpuzzle.png" alt="Edpuzzle">
+        <div class="tac-card-content">
+          <h3>Edpuzzle</h3>
+          <p>Permite convertir videos en actividades educativas con preguntas y seguimiento.</p>
+        </div>
+      </a>
+
+      <a href="https://nearpod.com/" class="tac-card" target="_blank">
+        <img src="nearpod.jpg" alt="Nearpod">
+        <div class="tac-card-content">
+          <h3>Nearpod</h3>
+          <p>Plataforma para clases interactivas con evaluaciones, videos y participacion en tiempo real.</p>
+        </div>
+      </a>
+
+      <a href="https://genial.ly/" class="tac-card" target="_blank">
+        <img src="genially.jpg" alt="Genially">
+        <div class="tac-card-content">
+          <h3>Genially</h3>
+          <p>Herramienta para crear contenidos interactivos, presentaciones e infografias.</p>
+        </div>
+      </a>
+
+      <a href="https://kahoot.com/" class="tac-card" target="_blank">
+        <img src="kahoot.jpg" alt="Kahoot">
+        <div class="tac-card-content">
+          <h3>Kahoot</h3>
+          <p>Plataforma de cuestionarios dinamicos para aprender jugando en clase.</p>
+        </div>
+      </a>
+
+      <a href="https://quizlet.com/" class="tac-card" target="_blank">
+        <img src="quizlet.jpg" alt="Quizlet">
+        <div class="tac-card-content">
+          <h3>Quizlet</h3>
+          <p>Ayuda a estudiar con fichas, juegos y actividades para reforzar contenidos.</p>
+        </div>
+      </a>
+
+      <a href="https://www.gimkit.com/" class="tac-card" target="_blank">
+        <img src="gimkit.jpg" alt="Gimkit">
+        <div class="tac-card-content">
+          <h3>Gimkit</h3>
+          <p>Herramienta de aprendizaje basada en juegos y preguntas interactivas.</p>
+        </div>
+      </a>
+
+      <a href="https://www.socrative.com/" class="tac-card" target="_blank">
+        <img src="socrative.jpg" alt="Socrative">
+        <div class="tac-card-content">
+          <h3>Socrative</h3>
+          <p>Plataforma para evaluaciones rapidas, quizzes y seguimiento del aprendizaje.</p>
+        </div>
+      </a>
+
+      <a href="https://www.blooket.com/" class="tac-card" target="_blank">
+        <img src="blooket.png" alt="Blooket">
+        <div class="tac-card-content">
+          <h3>Blooket</h3>
+          <p>Herramienta de aprendizaje gamificado con actividades y juegos educativos.</p>
+        </div>
+      </a>
+
+      <a href="https://www.mentimeter.com/" class="tac-card" target="_blank">
+        <img src="mentimeter.png" alt="Mentimeter">
+        <div class="tac-card-content">
+          <h3>Mentimeter</h3>
+          <p>Permite hacer encuestas, preguntas y presentaciones participativas en vivo.</p>
+        </div>
+      </a>
+
+      <a href="https://coggle.it/" class="tac-card" target="_blank">
+        <img src="coglee.jpg" alt="Coggle">
+        <div class="tac-card-content">
+          <h3>Coggle</h3>
+          <p>Herramienta visual para crear mapas mentales y organizar ideas.</p>
+        </div>
+      </a>
+
+      <a href="https://www.mindmeister.com/" class="tac-card" target="_blank">
+        <img src="mind.jpg" alt="MindMeister">
+        <div class="tac-card-content">
+          <h3>MindMeister</h3>
+          <p>Plataforma para diseñar mapas mentales colaborativos y estructurar conocimientos.</p>
+        </div>
+      </a>
+
+      <a href="https://www.notion.so/login" class="tac-card" target="_blank">
+        <img src="notion.jpg" alt="Notion">
+        <div class="tac-card-content">
+          <h3>Notion</h3>
+          <p>Espacio digital para organizar apuntes, proyectos, bases de datos y trabajo colaborativo.</p>
+        </div>
+      </a>
+
+      <a href="https://scratch.mit.edu/" class="tac-card" target="_blank">
+        <img src="scratch.jpg" alt="Scratch">
+        <div class="tac-card-content">
+          <h3>Scratch</h3>
+          <p>Entorno de programacion visual para aprender logica, creatividad y pensamiento computacional.</p>
+        </div>
+      </a>
+
+      <a href="https://www.smartick.com/" class="tac-card" target="_blank">
+        <img src="smartick.jpg" alt="Smartick">
+        <div class="tac-card-content">
+          <h3>Smartick</h3>
+          <p>Plataforma educativa enfocada en el aprendizaje personalizado de matematicas.</p>
+        </div>
+      </a>
+
+      <a href="https://www.aleks.com/" class="tac-card" target="_blank">
+        <img src="aleks.jpg" alt="ALEKS">
+        <div class="tac-card-content">
+          <h3>ALEKS</h3>
+          <p>Sistema de aprendizaje adaptativo para matematicas y otras areas academicas.</p>
+        </div>
+      </a>
+
+      <a href="https://www.labster.com/" class="tac-card" target="_blank">
+        <img src="labster.jpg" alt="Labster">
+        <div class="tac-card-content">
+          <h3>Labster</h3>
+          <p>Laboratorios virtuales interactivos para aprender ciencias mediante simulaciones.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>

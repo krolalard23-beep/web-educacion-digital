@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1b2740;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px 60px;
+      background: rgba(111, 0, 255, 0.92);
+      backdrop-filter: blur(8px);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 220px;
+      height: auto;
+      display: block;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffe066;
+    }
+
+    .tep-page {
+      padding: 180px 60px 70px;
+    }
+
+    .tep-page h1 {
+      font-size: 54px;
+      margin-bottom: 14px;
+    }
+
+    .tep-page .intro {
+      font-size: 18px;
+      color: #62708a;
+      line-height: 1.7;
+      margin-bottom: 35px;
+      max-width: 950px;
+    }
+
+    .tep-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+      gap: 18px;
+      justify-content: start;
+    }
+
+    .tep-card {
+      display: block;
+      text-decoration: none;
+      background: #f3f3f3;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #1b2740;
+    }
+
+    .tep-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .tep-card img {
+      width: 100%;
+      height: 95px;
+      object-fit: contain;
+      display: block;
+      background: #ffffff;
+      padding: 8px;
+    }
+
+    .tep-card-content {
+      padding: 10px 12px 14px;
+    }
+
+    .tep-card h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .tep-card p {
+      font-size: 11px;
+      line-height: 1.45;
+      color: #62708a;
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        padding: 20px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-img {
+        width: 200px;
+      }
+
+      .menu {
+        gap: 15px;
+      }
+
+      .tep-page {
+        padding: 220px 25px 50px;
+      }
+
+      .tep-page h1 {
+        font-size: 42px;
+      }
+
+      .tep-page .intro {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="UNM-Logo_grises-1024x456.png" alt="Logo UNM" class="logo-img">
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Recursos.html">Recursos</a></li>
+      <li><a href="TICS.html">TIC</a></li>
+      <li><a href="TAC.html">TAC</a></li>
+      <li><a href="TEP.html">TEP</a></li>
+      <li><a href="quienessomos.html">¿Quiénes somos?</a></li>
+    </ul>
+  </nav>
+
+  <main class="tep-page">
+    <h1>Herramientas TEP</h1>
+    <p class="intro">
+      Las TEP fortalecen la participacion, la colaboracion, la comunicacion y el empoderamiento digital.
+      Selecciona una herramienta para acceder a su plataforma y conocer su utilidad.
+    </p>
+
+    <section class="tep-grid">
+      <a href="https://wordpress.com/log-in" class="tep-card" target="_blank">
+        <img src="wordpress.jpg" alt="WordPress">
+        <div class="tep-card-content">
+          <h3>WordPress</h3>
+          <p>Plataforma para crear sitios web y blogs que fomentan la publicacion y participacion digital.</p>
+        </div>
+      </a>
+
+      <a href="https://www.blogger.com/" class="tep-card" target="_blank">
+        <img src="bloguer.jpg" alt="Blogger">
+        <div class="tep-card-content">
+          <h3>Blogger</h3>
+          <p>Servicio para crear blogs y compartir ideas, contenidos y experiencias en linea.</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/" class="tep-card" target="_blank">
+        <img src="youtube.jpg" alt="YouTube">
+        <div class="tep-card-content">
+          <h3>YouTube</h3>
+          <p>Plataforma de video para difundir informacion, aprender y participar mediante contenido audiovisual.</p>
+        </div>
+      </a>
+
+      <a href="https://padlet.com/" class="tep-card" target="_blank">
+        <img src="padlet.jpg" alt="Padlet">
+        <div class="tep-card-content">
+          <h3>Padlet</h3>
+          <p>Muro colaborativo para compartir ideas, archivos, opiniones y actividades en grupo.</p>
+        </div>
+      </a>
+
+      <a href="https://sites.google.com/" class="tep-card" target="_blank">
+        <img src="sites.jpg" alt="Google Sites">
+        <div class="tep-card-content">
+          <h3>Google Sites</h3>
+          <p>Herramienta para crear paginas web y publicar contenidos de manera sencilla.</p>
+        </div>
+      </a>
+
+      <a href="https://www.wikipedia.org/" class="tep-card" target="_blank">
+        <img src="wikip.jpg" alt="Wikipedia">
+        <div class="tep-card-content">
+          <h3>Wikipedia</h3>
+          <p>Enciclopedia colaborativa que permite consultar y compartir conocimiento en linea.</p>
+        </div>
+      </a>
+
+      <a href="https://www.pbworks.com/" class="tep-card" target="_blank">
+        <img src="pbworks.jpg" alt="PBworks">
+        <div class="tep-card-content">
+          <h3>PBworks</h3>
+          <p>Plataforma colaborativa tipo wiki para construir contenidos y proyectos en equipo.</p>
+        </div>
+      </a>
+
+      <a href="https://new.edmodo.com/" class="tep-card" target="_blank">
+        <img src="edmodo.jpg" alt="Edmodo">
+        <div class="tep-card-content">
+          <h3>Edmodo</h3>
+          <p>Entorno digital para conectar docentes, estudiantes y familias en procesos educativos.</p>
+        </div>
+      </a>
+
+      <a href="https://www.facebook.com/" class="tep-card" target="_blank">
+        <img src="face.jpg" alt="Facebook">
+        <div class="tep-card-content">
+          <h3>Facebook</h3>
+          <p>Red social para compartir informacion, crear comunidades y participar en espacios digitales.</p>
+        </div>
+      </a>
+
+      <a href="https://discord.com/login" class="tep-card" target="_blank">
+        <img src="discord.jpg" alt="Discord">
+        <div class="tep-card-content">
+          <h3>Discord</h3>
+          <p>Plataforma de comunicacion para crear comunidades, chats y colaboracion en tiempo real.</p>
+        </div>
+      </a>
+
+      <a href="https://x.com/i/flow/login" class="tep-card" target="_blank">
+        <img src="xtwiter.jpg" alt="X Twitter">
+        <div class="tep-card-content">
+          <h3>X (X-Twitter)</h3>
+          <p>Red social para difundir ideas, noticias y participar en conversaciones publicas.</p>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/accounts/login/" class="tep-card" target="_blank">
+        <img src="instagram.jpg" alt="Instagram">
+        <div class="tep-card-content">
+          <h3>Instagram</h3>
+          <p>Plataforma visual para compartir imagenes, videos y mensajes con la comunidad.</p>
+        </div>
+      </a>
+
+      <a href="https://www.tiktok.com/login" class="tep-card" target="_blank">
+        <img src="tik.jpg" alt="TikTok">
+        <div class="tep-card-content">
+          <h3>TikTok</h3>
+          <p>Red de videos cortos que permite crear contenido y conectar con grandes audiencias.</p>
+        </div>
+      </a>
+
+      <a href="https://www.change.org/" class="tep-card" target="_blank">
+        <img src="code.jpg" alt="Change.org">
+        <div class="tep-card-content">
+          <h3>Change.org</h3>
+          <p>Plataforma para impulsar peticiones y promover cambios a traves de la participacion ciudadana.</p>
+        </div>
+      </a>
+
+      <a href="https://slack.com/signin" class="tep-card" target="_blank">
+        <img src="slack.jpg" alt="Slack">
+        <div class="tep-card-content">
+          <h3>Slack</h3>
+          <p>Espacio de comunicacion colaborativa para equipos, proyectos y comunidades digitales.</p>
+        </div>
+      </a>
+
+      <a href="https://www.reddit.com/login/" class="tep-card" target="_blank">
+        <img src="reddit.jpg" alt="Reddit">
+        <div class="tep-card-content">
+          <h3>Reddit</h3>
+          <p>Comunidad digital para debatir temas, compartir informacion y participar en foros.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
